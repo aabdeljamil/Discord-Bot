@@ -1,8 +1,9 @@
 import discord
 import asyncio
 
-TOKEN = 'NzU2Mjg4ODYyOTEyNzc0Mjk1.X2Pq5A.i1eXmxtaU22gUzPTmmiWVM0RHOA'
-GUILD = 'Sustenance'
+#token and guild removed for security reasons
+TOKEN = '' 
+GUILD = ''
 
 client = discord.Client()
 kickList = []
