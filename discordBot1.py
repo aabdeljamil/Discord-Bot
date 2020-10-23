@@ -132,7 +132,7 @@ async def on_message(message):
             while voiceClient.is_playing():
                 await message.channel.send('\nSend "bye" to disconnect me from voice channel')
                 try:
-                    msg = await client.wait_for('message', check=lambda, timeout=None, message: message.content == 'bye')#edit this line to change the parameter, 'timeout', to equal the length of the audio
+                    msg = await client.wait_for('message', check=lambda, message: message.content == 'leave', timeout=None)#edit this line to change the parameter, 'timeout', to equal the length of the audio
                 except asyncio.TimeoutError:
                     pass
                 if msg:
